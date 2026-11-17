@@ -1,0 +1,498 @@
+/* =====================================================================
+   EQUILÍBRIO ATIVO / TRAJETÓRIAS EM MOVIMENTO — Direção de Arte 2026
+   Origem da linguagem: movimento orgânico da marca, respiro editorial,
+   contrastes acessíveis e composição adequada à informação de cada página.
+   Paleta da marca NÃO alterada. Não modificar regras antigas no styles.css:
+   este arquivo é a fonte de verdade da camada visual e responsiva.
+   ===================================================================== */
+:root {
+  --navy:#0F2B48; --teal:#1C6672; --mint:#77B097;
+  --coral:#F0997F; --yellow:#F5CC72;
+  --paper:#FBF9F4; --paper-deep:#F2F5EF; --cloud:#E8F1E8;
+  --ink:#0F2B48; --text:#243D4E; --muted:#455A66;
+  --font:'Manrope',system-ui,-apple-system,sans-serif;
+  --display:'DM Sans',system-ui,-apple-system,sans-serif;
+  --serif:'Instrument Serif',Georgia,serif;
+  --max:1320px;
+}
+html {scroll-behavior:smooth;scroll-padding-top:112px}
+body {font-family:var(--font);color:var(--text);font-size:18px;line-height:1.7;background:#FFF;min-width:320px;overflow-x:clip}
+*,*::before,*::after {box-sizing:border-box}
+.container {width:min(var(--max),calc(100% - clamp(36px,7vw,128px)));margin-inline:auto}
+img {max-width:100%}
+[hidden] {display:none!important}
+a {text-underline-offset:5px}
+:focus-visible {outline:3px solid #C2634B;outline-offset:4px}
+::selection {background:#F5CC72;color:var(--ink)}
+h1,h2,h3,h4,p {margin-top:0}
+h1,h2,h3,h4 {font-family:var(--display);font-weight:700;color:var(--ink);letter-spacing:-.052em;line-height:1.14;text-wrap:balance}
+h2 {font-size:clamp(2.45rem,4vw,4.15rem);margin-bottom:24px}
+h3 {font-size:clamp(1.55rem,2.3vw,2.25rem)}
+p {max-width:80ch}
+.lead {font-size:clamp(1.13rem,1.4vw,1.31rem);line-height:1.77;color:#355367}
+.small {font-size:.94rem}.muted {color:#455A66}
+.eyebrow {font-family:var(--font);font-size:.86rem;line-height:1.55;font-weight:800;letter-spacing:.13em;color:var(--teal);margin:0 0 20px;text-transform:uppercase}
+.eyebrow:before {width:29px;height:2px;margin-right:7px;background:var(--coral)}
+.section {padding:clamp(88px,10vw,150px) 0}
+.section-soft {background:var(--paper)}
+.section-heading,.section-heading.center {text-align:left;margin:0 0 clamp(34px,5vw,65px);max-width:790px}
+.section-heading h2{max-width:21ch}
+.section-heading p.lead {max-width:56ch}
+.skip-link {position:fixed;top:-100px;left:18px;z-index:10000;background:#FFF;color:var(--navy);border:2px solid var(--navy);padding:13px 20px}
+.skip-link:focus {top:14px}
+
+/* CAMADA 01 / SINALIZAÇÃO E NAVEGAÇÃO — largura integral, centro estável. */
+.announcement {background:var(--navy);color:#FFF;min-height:36px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 16px;padding:6px 20px;font:700 .78rem/1.45 var(--font);letter-spacing:.02em}
+.announcement__marker {width:6px;height:6px;display:inline-block;background:var(--yellow);border-radius:50%;flex:0 0 auto}
+.announcement__sep,.announcement__academic {color:#E4F0EA}
+.site-header {position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid #DFE8E4;backdrop-filter:blur(15px)}
+.header-inner {width:100%;max-width:none;margin:0;padding-inline:clamp(22px,3.6vw,76px);display:grid;grid-template-columns:minmax(200px,1fr) auto minmax(200px,1fr);align-items:center;min-height:95px;gap:clamp(18px,2vw,36px)}
+.brand {min-width:0!important;display:inline-flex;align-items:center;gap:10px;justify-self:start;text-decoration:none;flex-shrink:0}
+.brand-symbol {position:relative;display:block;width:61px;height:65px;flex:0 0 61px;transform:none!important;border:0!important;border-radius:0!important;background:transparent!important;overflow:visible}
+.brand-symbol::before,.brand-symbol::after {display:none!important}
+.brand-symbol img{display:block;object-fit:contain;width:100%;height:100%}
+.brand-wordmark {display:flex;flex-direction:column;gap:0}
+.brand-wordmark strong {font-family:var(--display);font-size:1.08rem!important;line-height:.94!important;font-weight:800;letter-spacing:-.057em!important;color:var(--navy);display:flex;flex-direction:column;gap:3px}
+.brand-wordmark strong span {font:inherit!important;letter-spacing:inherit!important;color:inherit!important}
+.brand-wordmark .brand-subline {font-family:var(--font);color:var(--teal);font-weight:800;font-size:.52rem!important;letter-spacing:.095em!important;line-height:1.1!important;margin-top:7px}
+.main-nav {display:flex;align-items:center;justify-content:center;gap:clamp(13px,1.55vw,29px);white-space:nowrap}
+.main-nav>a:not(.btn) {position:relative;color:var(--navy);font-family:var(--font);font-size:.87rem;font-weight:750;line-height:1.4;padding:16px 0;transition:color .2s}
+.main-nav>a:not(.btn)::after {content:'';position:absolute;left:0;right:100%;bottom:9px;height:2px;background:var(--coral);transition:right .23s ease}
+.main-nav>a:not(.btn):hover::after,.main-nav>a[aria-current=page]::after {right:0}
+.main-nav>a[aria-current=page]{color:var(--teal)}
+.header-actions {display:flex;justify-content:flex-end;gap:14px;align-items:center}
+.header-cta {display:inline-flex;align-items:center;gap:18px;padding:13px 20px;background:var(--teal);color:white;border:1px solid var(--teal);border-radius:3px;font:800 .88rem/1.45 var(--font);white-space:nowrap;transition:background .2s,color .2s}
+.header-cta:hover{background:var(--navy);color:white}
+.header-cta span{font-size:1.2em}
+.nav-mobile-cta{display:none!important}
+.menu-toggle {display:none;background:var(--paper);border:1px solid var(--teal);border-radius:3px;width:54px;height:54px;color:var(--navy);align-items:center;justify-content:center}
+
+/* CAMADA 02 / AÇÕES E MICROTIPOGRAFIA. */
+.btn {min-height:56px;display:inline-flex;gap:17px;align-items:center;justify-content:center;border-radius:4px;padding:16px 24px;font:800 .95rem/1.35 var(--font);box-shadow:none!important;text-decoration:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:hover {transform:translateY(-2px)}
+.btn-primary {background:var(--teal);border-color:var(--teal);color:#FFF}
+.btn-primary:hover {background:var(--navy);border-color:var(--navy);color:white}
+.btn-outline {background:transparent;border-color:#7C9BA1;color:var(--navy)}
+.btn-outline:hover {background:var(--paper-deep);border-color:var(--teal)}
+.btn-light {background:white;color:var(--navy)}
+.btn-navy {background:var(--navy);color:white}
+.btn-small {min-height:48px;padding:10px 18px}
+.text-link {font-family:var(--font);font-size:1rem;font-weight:800;color:var(--teal);display:inline-flex;align-items:center;gap:10px;position:relative;line-height:1.55;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;text-decoration-color:transparent;transition:text-decoration-color .18s}
+.text-link:hover{text-decoration-color:currentColor}
+.text-link span {font-size:1.2em}
+
+/* CAMADA 03 / HOME — editorial sem cards e com ritmos variados. */
+.atelier-home {overflow:hidden}
+.atelier-hero {background:var(--paper);position:relative;padding:clamp(48px,6vw,82px) 0 0}
+.atelier-hero:before {content:"";position:absolute;right:0;top:0;width:32%;height:100%;background:#E5F0E8;pointer-events:none}
+.atelier-hero__grid {position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(36px,5vw,85px);align-items:center;min-height:min(690px,calc(100svh - 164px))}
+.atelier-hero__copy {padding:10px 0 50px;position:relative}
+.atelier-hero__rule {display:flex;justify-content:space-between;align-items:center;max-width:86%;border-top:1px solid #9FB6B5;padding-top:14px;margin-bottom:clamp(35px,5vw,66px);font:800 .75rem/1.5 var(--font);letter-spacing:.115em;color:var(--teal)}
+.atelier-hero__copy .eyebrow {color:#286876;font-size:.82rem;letter-spacing:.115em}
+.atelier-hero__copy .eyebrow:before{display:none}
+.atelier-hero__copy h1 {font-size:clamp(3.75rem,5.7vw,6.25rem);line-height:1.04;max-width:12ch;letter-spacing:-.069em;margin:0 0 23px}
+.atelier-hero__copy h1 em {font-family:var(--serif);font-weight:400;font-style:italic;color:var(--teal);letter-spacing:-.018em;white-space:normal}
+.atelier-hero__subtitle {font-family:var(--display);font-size:clamp(1.3rem,2vw,1.7rem);font-weight:700;letter-spacing:-.03em;color:var(--ink);line-height:1.4;margin-bottom:14px}
+.atelier-hero__copy .lead {max-width:50ch;margin:0 0 30px;font-size:1.09rem;line-height:1.8}
+.atelier-hero__copy .hero-actions {display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:0}
+.atelier-hero__visual {position:relative;margin:0;height:clamp(440px,45vw,615px);min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.atelier-hero__visual picture {display:block;width:100%;height:100%;position:relative;z-index:1}
+.atelier-hero__visual img {width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;filter:saturate(.94)}
+.atelier-hero__visual:before {content:"";position:absolute;z-index:0;inset:25px -23px -25px 23px;border:2px solid var(--teal)}
+.atelier-hero__visual figcaption {position:absolute;z-index:2;bottom:0;left:0;right:0;padding:14px 20px;font:800 .7rem/1.4 var(--font);letter-spacing:.09em;background:rgba(15,43,72,.90);color:#FFF}
+.atelier-hero__visual-index {z-index:2;position:absolute;right:-17px;top:30px;writing-mode:vertical-rl;color:var(--navy);background:var(--yellow);padding:10px 5px;font:800 .77rem/1.1 var(--font)}
+.atelier-hero__foot {position:relative;z-index:1;margin-top:clamp(28px,4.5vw,65px);display:flex;justify-content:space-between;gap:20px;border-top:1px solid #C8D8D2;padding-block:20px;font:700 .81rem/1.5 var(--font);color:#3A5A64}
+.atelier-principle {background:var(--navy);color:white}
+.atelier-principle__inner {min-height:185px;display:grid;grid-template-columns:100px minmax(0,1fr) auto;gap:30px;align-items:center;padding-block:28px}
+.atelier-principle__star {font-size:clamp(3rem,5vw,4.5rem);font-family:var(--serif);font-weight:400;color:var(--yellow);line-height:1}
+.atelier-principle p {color:#FFF;font:700 clamp(1.75rem,2.75vw,2.8rem)/1.24 var(--display);letter-spacing:-.048em;max-width:27ch;margin:0}
+.atelier-principle em {font-family:var(--serif);font-weight:400;color:#B9E1D1;letter-spacing:0}
+.atelier-principle__number {color:#D2E9E2;writing-mode:vertical-rl;font:800 .77rem/1 var(--font);letter-spacing:.1em}
+.atelier-moves {background:#FFF}
+.atelier-section-head {display:grid;grid-template-columns:1.38fr .62fr;align-items:end;gap:clamp(25px,5vw,95px);margin-bottom:clamp(42px,7vw,85px)}
+.atelier-section-head h2 {font-size:clamp(2.65rem,4.2vw,4.4rem);max-width:24ch;margin:0}
+.atelier-section-head h2 em,.atelier-manifesto h2 em,.atelier-next h2 em {font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
+.atelier-section-head h2 em {color:var(--teal)}
+.atelier-section-head>p {font-size:1.1rem;color:#415968;line-height:1.7;max-width:35ch;margin:0 0 10px}
+.atelier-move-list {border-top:1px solid #B7C6C3}
+.atelier-move {display:grid;grid-template-columns:60px minmax(0,.96fr) minmax(0,1fr);gap:clamp(25px,4vw,70px);align-items:center;border-bottom:1px solid #B7C6C3;padding:clamp(28px,4vw,58px) 0}
+.atelier-move__number {font:800 1rem/1 var(--display);align-self:start;padding-top:4px;color:var(--teal)}
+.atelier-move__visual {position:relative;aspect-ratio:1.41;overflow:hidden;display:grid;place-items:center}
+.atelier-move__visual--mint {background:#DDEDE4}
+.atelier-move__visual--coral {background:#F6E6DE}
+.atelier-move__visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .35s ease}
+.atelier-move:hover .atelier-move__visual img {transform:scale(1.022)}
+.atelier-move__copy {padding-block:15px}
+.atelier-move__copy .eyebrow{font-size:.78rem}
+.atelier-move__copy .eyebrow:before{display:none}
+.atelier-move__copy h3 {font-size:clamp(2.8rem,4.4vw,4.6rem);line-height:1.04;margin:0 0 24px}
+.atelier-move__copy h3 span {color:var(--coral)}
+.atelier-move__copy p:not(.eyebrow) {max-width:31ch;font-size:1.14rem;line-height:1.8;margin-bottom:25px;color:#355263}
+.atelier-move--reverse {grid-template-columns:60px minmax(0,1fr) minmax(0,.96fr)}
+.atelier-move--reverse .atelier-move__copy{grid-column:2;grid-row:1}
+.atelier-move--reverse .atelier-move__visual{grid-column:3;grid-row:1}
+.atelier-move--reverse .atelier-move__number{grid-column:1;grid-row:1}
+.atelier-manifesto {background:var(--teal);position:relative;overflow:hidden;color:#FFF;padding:clamp(100px,12vw,165px) 0}
+.atelier-manifesto__grid {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.68fr);gap:clamp(40px,8vw,150px);align-items:end;position:relative;z-index:1}
+.atelier-manifesto h2 {max-width:14ch;font-size:clamp(3.9rem,6.5vw,7.2rem);line-height:1.04;color:#FFF;margin:0}
+.atelier-manifesto h2 em {color:#F5CC72}
+.atelier-manifesto .eyebrow {color:#D2EAE3;margin-bottom:36px}
+.atelier-manifesto__copy p {font-size:1.15rem;color:#FFF;line-height:1.9;max-width:39ch;margin-bottom:23px}
+.atelier-manifesto__copy .text-link {color:#FFF;text-decoration-color:#FFF;margin-top:10px}
+.atelier-manifesto__stroke {position:absolute;z-index:-1;pointer-events:none;right:-100px;top:-130px;width:360px;max-height:none;height:530px;color:rgba(249,250,246,.25)}
+.atelier-next {background:var(--paper);padding:clamp(90px,10vw,155px) 0}
+.atelier-next__inner {display:grid;grid-template-columns:110px 1fr auto;gap:clamp(30px,4vw,65px);align-items:center;border-top:1px solid #AAC1B8;padding-top:40px}
+.atelier-next__side {font:800 .82rem/1.5 var(--font);letter-spacing:.12em;color:var(--teal);align-self:start;max-width:90px}
+.atelier-next h2{font-size:clamp(3rem,4.6vw,5.2rem);line-height:1.05;max-width:14ch;margin-bottom:22px}
+.atelier-next h2 em {color:var(--teal)}
+.atelier-next p{max-width:40ch;font-size:1.12rem;color:#415968;margin:0}
+.atelier-next__button {align-self:end;display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-width:200px;padding:19px 23px;border:1px solid var(--teal);background:var(--teal);color:white;font:800 .95rem/1.4 var(--font);transition:background .2s}
+.atelier-next__button:hover{background:var(--navy);color:#FFF}
+
+/* CAMADA 04 / INTERIORES: FOLHAS EDITORIAIS, NÃO SEÇÕES CLONADAS. */
+.atelier-interior {min-height:62vh}
+.page-hero--atelier {position:relative;overflow:hidden;padding:clamp(72px,8vw,122px) 0 clamp(55px,7vw,90px);background:var(--paper);min-height:410px}
+.page-hero--atelier::before,.page-hero--atelier::after {display:none!important}
+.page-hero--atelier[data-theme="ink"] {background:var(--navy);color:#FFF}
+.page-hero--atelier[data-theme="mint"] {background:#E1EEE5;color:var(--navy)}
+.page-hero--atelier[data-theme="paper"] {background:var(--paper);color:var(--navy)}
+.page-hero__grid {position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start}
+.page-hero__overline {display:flex;justify-content:space-between;align-items:center;border-top:1px solid currentColor;padding-top:14px;opacity:.82;width:100%;margin-bottom:clamp(52px,6vw,90px);font:800 .78rem/1.5 var(--font);letter-spacing:.12em}
+.page-hero .breadcrumb {font-size:.91rem;gap:12px;color:inherit;opacity:.81;margin-bottom:24px;position:relative;z-index:1}
+.page-hero .breadcrumb a {text-underline-offset:4px}
+.page-hero .breadcrumb span[aria-current]{color:inherit;opacity:1;font-weight:700}
+.page-hero .eyebrow {margin-bottom:15px;color:var(--teal)}
+.page-hero .eyebrow:before{background:var(--coral)}
+.page-hero--atelier[data-theme="ink"] .eyebrow {color:#DBF0E9}
+.page-hero--atelier[data-theme="ink"] .eyebrow:before{background:var(--yellow)}
+.page-hero--atelier h1 {max-width:19ch;font-size:clamp(3.1rem,5.9vw,6.4rem);line-height:1.06;letter-spacing:-.064em;margin:0 0 23px;color:var(--navy)}
+.page-hero--atelier[data-theme="ink"] h1 {color:#FFF}
+.page-hero--atelier .lead,.page-hero--atelier .container>p:not(.eyebrow) {color:#365669;font-size:clamp(1.12rem,1.5vw,1.36rem);max-width:54ch;line-height:1.7;margin-bottom:10px}
+.page-hero--atelier[data-theme="ink"] .lead,.page-hero--atelier[data-theme="ink"] .container>p:not(.eyebrow) {color:#E9F4F3}
+.page-hero__arc {position:absolute;top:-110px;right:-75px;height:calc(100% + 175px);width:auto;max-width:none;pointer-events:none;color:rgba(28,102,114,.22)}
+.page-hero--atelier[data-theme="ink"] .page-hero__arc{color:rgba(119,176,151,.20)}
+.page-hero--atelier[data-theme="mint"] .page-hero__arc{color:rgba(28,102,114,.15)}
+.page-hero__closing {display:block;margin-top:clamp(45px,6vw,90px);font:800 .71rem/1.5 var(--font);letter-spacing:.15em;opacity:.74}
+.page-hero--atelier + .section {padding-top:clamp(82px,8vw,125px)}
+.page-hero--atelier[data-theme="paper"] + .section {background:white}
+.page-hero--atelier[data-theme="mint"] + .section {background:white}
+.page-hero--atelier[data-theme="ink"] + .section {background:var(--paper)}
+
+/* Grid de conteúdo: contrastar imagem e texto, layout fluido e respiro. */
+.split {display:grid;grid-template-columns: minmax(0,1fr) minmax(0,.85fr);gap:clamp(45px,7vw,130px);align-items:center}
+.split .lead {font-size:1.17rem}
+.blob-panel,.atelier-featured-art {display:flex;min-height:450px;align-items:center;justify-content:center;background:#E3F0E8;border:0;border-radius:0;padding:45px;position:relative}
+.blob-panel:before,.blob-panel:after {display:none}
+.blob-panel img {max-width:100%;height:auto;object-fit:contain;transform:none!important}
+.blob-caption{position:absolute;left:22px;bottom:22px;background:var(--navy);color:white;padding:12px 16px;border:0;box-shadow:none;max-width:calc(100% - 44px);font-size:.88rem}
+.grid-3 {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #BDCFCB}
+.grid-3 > * {background:transparent;border:0;border-right:1px solid #BDCFCB;border-bottom:1px solid #BDCFCB;border-radius:0;box-shadow:none!important;padding:34px clamp(20px,3vw,42px);min-width:0}
+.grid-3 > *:last-child {border-right:0}
+.grid-3 h3 {font-size:1.45rem;margin:0 0 14px}
+.grid-3 .icon-box {display:none}
+.grid-3 p {font-size:1.05rem;color:#385667;line-height:1.7}
+.grid-3 .statement p {color:#385667}
+.plain-card {background:transparent;border:0;border-left:2px solid var(--mint);padding:14px 20px;box-shadow:none;border-radius:0}
+.plain-card h2 {font-size:clamp(1.6rem,2.5vw,2.5rem)}
+.two-panel {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,70px)}
+.quote-panel {background:var(--teal);padding:clamp(45px,7vw,90px);border-radius:0;box-shadow:none}
+.quote-panel p {font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4vw,4.2rem);line-height:1.24;font-weight:400;letter-spacing:0}
+.modality-detail,.modality-detail.flip {display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(36px,6vw,105px);align-items:center}
+.modality-detail.flip {grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr)}
+.modality-detail .image-frame {border-radius:0;overflow:hidden;background:#DFEEE5;position:relative}
+.modality-detail .image-frame.pink{background:#F7E7DF}
+.modality-detail .image-frame img {display:block;width:100%;height:auto;aspect-ratio:1.23;object-fit:contain;object-position:center}
+.modality-detail .image-caption {position:absolute;bottom:0;left:0;right:0;background:rgba(15,43,72,.92);color:white;padding:10px 16px;font-size:.81rem;line-height:1.5}
+.modality-detail .detail-copy h2 {font-size:clamp(2.9rem,4.6vw,5.2rem);margin-top:20px}
+.modality-detail .detail-copy .lead{line-height:1.7}
+.info-chip {background:#E5F2EA;color:#174F54;border:0;border-radius:2px;padding:10px 16px;font-size:.91rem;font-weight:750}
+.info-chip.coral {background:#F9E6DF;color:#7C4137}
+.check-list {margin:22px 0 35px;padding:0;list-style:none}
+.check-list li {display:flex;align-items:flex-start;gap:13px;font-size:1rem;line-height:1.66;margin-bottom:12px}
+.check-list li svg {color:var(--teal);width:21px;height:21px;flex:0 0 21px;margin-top:3px}
+
+/* EQUIPES — pessoas apresentadas como nomes e percurso, sem avatares fictícios. */
+.team-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid #C5D4CD;margin-top:52px}
+.team-card {position:relative;background:transparent;border:0;border-bottom:1px solid #C5D4CD;border-radius:0;box-shadow:none!important;padding:35px 32px 37px 0}
+.team-card:nth-child(even) {padding-left:clamp(24px,4vw,65px);border-left:1px solid #C5D4CD}
+.team-card .avatar{display:none!important}
+.team-card .team-index{display:block;color:var(--teal);font:800 .87rem/1.4 var(--font);letter-spacing:.1em;margin-bottom:26px}
+.team-card h3{font-size:clamp(1.7rem,2.5vw,2.6rem);margin-bottom:14px}
+.team-card p {font-size:1.05rem;line-height:1.7}
+
+/* PLANOS — dois planos com tratamentos diferentes, comparação sem excessos. */
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:22px;max-width:1100px;margin:0}
+.pricing-card {border:1px solid #BED1CA;border-radius:0;box-shadow:none;background:var(--paper);padding:clamp(28px,4.3vw,59px);display:flex;flex-direction:column;min-width:0}
+.pricing-card.accent {border:1px solid var(--teal);background:var(--teal);color:white}
+.pricing-card .pricing-index {font:800 .82rem/1.5 var(--font);letter-spacing:.14em;color:var(--teal);margin-bottom:24px}
+.pricing-card.accent .pricing-index {color:#E4F3EA}
+.pricing-card .plan-icon {display:none}
+.pricing-card h3 {font-size:clamp(2rem,2.6vw,2.7rem);margin:0 0 15px;letter-spacing:-.045em}
+.pricing-card .plan-description{font-size:1.08rem;line-height:1.65;color:#415966;min-height:0}
+.pricing-card .plan-price {font-size:clamp(2.55rem,3.7vw,4.15rem);letter-spacing:-.06em;white-space:normal;margin:20px 0 28px}
+.pricing-card .plan-price span {color:inherit;font-size:1rem;letter-spacing:0}
+.pricing-card .check-list {border-top:1px solid #CDDED4;padding-top:25px;margin:2px 0 36px}
+.pricing-card .check-list li {font-size:1rem;line-height:1.6}
+.pricing-card .small {font-size:.89rem;line-height:1.65;color:#4C626D}
+.pricing-card.accent h3,.pricing-card.accent .plan-description,.pricing-card.accent .plan-price,.pricing-card.accent .small{color:#FFF}
+.pricing-card.accent .check-list{border-color:rgba(255,255,255,.34)}
+.pricing-card.accent .check-list svg{color:var(--yellow)}
+.pricing-card.accent .btn-primary {background:var(--yellow);color:var(--navy);border-color:var(--yellow)}
+.pricing-card.accent .btn-primary:hover {background:#FFF;border-color:#FFF}
+.rules-card {background:transparent;padding:0;border:0;border-radius:0}
+.rules-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:50px;row-gap:0;border-top:1px solid #C0D1CD}
+.rule {display:flex;gap:16px;padding:23px 0;border-bottom:1px solid #C0D1CD}
+.rule svg {color:var(--teal);flex:0 0 21px;margin-top:6px}
+.rule strong{display:block;font-size:1.04rem;line-height:1.45}
+.rule span{font-size:.98rem;line-height:1.6;color:#455B69}
+
+/* FAQ, EDUCAÇÃO E COMPROMISSOS — lista editorial, não série de quadrados. */
+.faq-list {max-width:950px;margin:0;border-top:1px solid #A6C0B8}
+.faq-list details {border-bottom:1px solid #A6C0B8}
+.faq-list summary {padding:27px 52px 27px 0;font-family:var(--display);font-size:clamp(1.14rem,1.5vw,1.42rem);font-weight:700;line-height:1.45;color:var(--navy)}
+.faq-list summary::after{color:var(--teal);top:18px;font-size:2rem}
+.faq-list .faq-answer {padding:0 50px 25px 0;max-width:75ch;font-size:1.04rem;line-height:1.75;color:#3B5866}
+.learning-grid {display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid #BDCDC6}
+.learning-card {position:relative;display:grid;grid-template-columns:130px minmax(0,1fr);column-gap:clamp(20px,5vw,86px);background:transparent;padding:48px 0;border:0;border-bottom:1px solid #BDCDC6;border-radius:0;box-shadow:none}
+.learning-card .learning-index {grid-column:2;font-size:.78rem;letter-spacing:.13em;font-weight:800;color:var(--teal);margin-bottom:13px}
+.learning-glyph {grid-column:1;grid-row:1/span 5;font:400 clamp(3.8rem,6vw,6.5rem)/1 var(--serif);color:var(--mint)}
+.learning-card h2,.learning-card>p {grid-column:2}
+.learning-card h2 {font-size:clamp(1.9rem,3vw,3rem);max-width:22ch;margin-bottom:22px}
+.learning-card p {max-width:65ch;font-size:1.07rem;line-height:1.82}
+.learning-card .source-line {font-size:.93rem;line-height:1.65;color:#465F6B}
+.learning-card .source-line a {color:#145E65;text-decoration:underline}
+.reviews-empty {max-width:990px;padding:20px 0 30px;background:none;border:0;text-align:left;box-shadow:none}
+.reviews-empty h2 {max-width:23ch}
+.reviews-empty .lead {max-width:64ch}
+.reviews-empty .hero-actions {margin-top:30px}
+.essential-faq .narrow {max-width:990px}
+.essential-inline-link {font-size:1.05rem;line-height:1.8;margin-top:35px}
+
+/* CONTATO E AGENDAMENTO — uma única área de formulário, leitura simplificada. */
+.contact-layout {display:grid;grid-template-columns:minmax(0,.76fr) minmax(0,1fr);gap:clamp(42px,8vw,125px);align-items:start}
+.contact-card {padding:clamp(28px,3.6vw,52px);border:1px solid #BDD2CB;border-radius:0;box-shadow:none;background:white}
+.contact-card h2 {font-size:clamp(2rem,3vw,3rem)}
+.contact-card p.muted {color:#48626D}
+.contact-info{display:grid;gap:0;border-top:1px solid #BBD0C8}
+.contact-detail {padding:23px 0;border-bottom:1px solid #BBD0C8;gap:17px}
+.contact-detail p {font-size:1rem;line-height:1.7}
+.contact-detail strong {font-size:1.05rem}
+.contact-detail svg{color:var(--teal);margin-top:7px}
+.form-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 20px}
+.field {margin-bottom:20px;gap:9px}
+.field label {font-size:1rem;font-weight:750;color:var(--navy)}
+.field input,.field select,.field textarea {font-size:1rem;line-height:1.5;border:1.5px solid #7C9BA5;border-radius:3px;min-height:56px;padding:15px 17px}
+.field textarea {min-height:160px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal);outline:3px solid #F5CC72;outline-offset:1px}
+.field ::placeholder {color:#516674}
+.form-check {font-size:.99rem;line-height:1.65;color:#3C5464}
+.form-check input {width:22px;height:22px;flex-basis:22px;margin-top:3px}
+.form-note,.form-feedback {font-size:.96rem;line-height:1.65}
+.message-draft {border:1px solid #BDD2CB;border-radius:0;background:var(--paper);padding:20px}
+.message-draft pre {font-size:.96rem}
+.essential-disclosure {border-radius:0;border-color:#C1D4CD;background:#F5F9F5;max-width:100%}
+.essential-disclosure summary{font-size:1.08rem}
+.note-panel,.notice,.academic-note {border:0;border-left:3px solid var(--teal);border-radius:0;background:#EAF3ED;padding:25px 28px;color:#243D4E}
+.note-panel svg{color:var(--teal)}
+.note-panel p{font-size:1rem;line-height:1.7}
+.academic-note {background:var(--paper);border-color:var(--coral)}
+
+/* PÁGINAS LEGAIS — sem texto miúdo e com largura de leitura. */
+.privacy-content,.narrow-copy {max-width:810px;margin:0}
+.privacy-content h2,.narrow-copy h2 {font-size:clamp(1.55rem,2.5vw,2.55rem);margin:44px 0 18px}
+.privacy-content p,.privacy-content li,.narrow-copy p {font-size:1.05rem;line-height:1.85}
+.privacy-content a,.narrow-copy a {text-decoration:underline;color:var(--teal)}
+
+/* CAMADA 05 / RODAPÉ EDITORIAL, IDENTIDADE COERENTE. */
+.atelier-footer {background:var(--navy);color:#FFF;padding:clamp(65px,8vw,115px) 0 20px}
+.atelier-footer__top{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(45px,8vw,135px);padding-bottom:clamp(55px,7vw,95px)}
+.atelier-footer__statement .eyebrow {color:#C4E3D7;margin-bottom:23px}
+.atelier-footer__statement .eyebrow:before {background:var(--yellow)}
+.atelier-footer__statement>p:not(.eyebrow) {font-family:var(--display);font-size:clamp(2.75rem,5vw,5.6rem);font-weight:700;line-height:1.15;letter-spacing:-.055em;color:#FFF;margin-bottom:28px}
+.atelier-footer__statement em {font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em;color:#BDE4D2}
+.footer-route {font:800 1rem/1.5 var(--font);color:#FFF;display:inline-flex;gap:18px;border-bottom:1px solid #BCE1D5;padding-bottom:8px}
+.footer-route:hover{color:#F5CC72}
+.atelier-footer__aside {padding-top:18px}
+.footer-brand {margin-bottom:25px;gap:9px}
+.atelier-footer .brand-wordmark strong,.atelier-footer .brand-wordmark strong span {color:#FFF!important}
+.atelier-footer .brand-wordmark .brand-subline {color:#D8EBE8!important}
+.atelier-footer__aside>p {font-size:1rem;line-height:1.68;color:#E2EEEE;max-width:38ch;margin:0 0 12px}
+.atelier-footer__nav {border-top:1px solid rgba(255,255,255,.26);padding-top:36px;padding-bottom:38px;display:grid;grid-template-columns:1fr auto;gap:40px}
+.atelier-footer__nav nav:first-child {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 22px}
+.atelier-footer__nav nav:last-child {display:flex;flex-direction:column;gap:16px}
+.atelier-footer__nav a {font-size:.97rem;line-height:1.5;color:#F3F8F8;text-decoration:none}
+.atelier-footer__nav a:hover,.atelier-footer__nav a:focus-visible{text-decoration:underline;text-underline-offset:5px}
+.atelier-footer__bottom {border-top:1px solid rgba(255,255,255,.2);padding-top:22px;display:flex;justify-content:space-between;gap:18px;font-size:.83rem;line-height:1.7;color:#D0E2E5}
+.back-to-top {bottom:22px;right:22px;width:52px;height:52px;border-radius:3px;box-shadow:none;background:var(--teal);color:#FFF;border:1px solid #FFF}
+.back-to-top:hover {background:var(--navy)}
+
+/* CAMADA 06 / BREAKPOINTS — preserva composição autoral, sem overflow. */
+@media(max-width:1250px){
+ .header-inner {grid-template-columns:1fr auto;min-height:85px}
+ .header-actions{grid-column:2;grid-row:1}
+ .menu-toggle{display:flex}
+ .header-cta{display:none}
+ .main-nav {position:fixed;top:85px;left:0;right:0;min-height:0;max-height:calc(100dvh - 85px);overflow:auto;background:var(--paper);border-bottom:1px solid #CADBD6;display:none;flex-direction:column;gap:0;align-items:stretch;padding:22px clamp(24px,8vw,100px) 35px;box-shadow:0 20px 45px rgba(15,43,72,.14);white-space:normal}
+ .main-nav.is-open {display:flex}
+ .main-nav > a:not(.btn){font-size:1.12rem;text-align:center;padding:17px 10px;border-bottom:1px solid #C9D9D2}
+ .main-nav > a:not(.btn)::after {display:none}
+ .main-nav>a[aria-current=page]{text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:var(--coral);text-underline-offset:6px}
+ .nav-mobile-cta{display:flex!important;margin:24px auto 0;width:min(100%,370px)}
+ .atelier-hero__copy h1 {font-size:clamp(3.5rem,6.1vw,5.25rem)}
+ .atelier-next__inner{grid-template-columns:90px 1fr}.atelier-next__button{grid-column:2;justify-self:start}
+}
+@media(max-width:950px){
+ body{font-size:17px}
+ .container{width:calc(100% - 50px)}
+ .atelier-hero__grid {grid-template-columns:minmax(0,1fr) minmax(0,.89fr);gap:25px;min-height:auto}
+ .atelier-hero__visual{height:520px}
+ .atelier-hero__copy h1{font-size:clamp(3.1rem,6vw,4.8rem)}
+ .atelier-hero__rule{margin-bottom:35px}
+ .atelier-hero__copy .lead{font-size:1rem}
+ .atelier-hero__copy .btn {width:100%}
+ .atelier-section-head {grid-template-columns:1fr;gap:17px}
+ .atelier-move,.atelier-move--reverse {grid-template-columns:45px minmax(0,1fr) minmax(0,1fr);gap:24px}
+ .atelier-manifesto__grid{gap:35px}
+ .atelier-manifesto h2{font-size:clamp(3.3rem,7vw,5.5rem)}
+ .grid-3 > *{padding:28px 20px}
+ .contact-layout{gap:32px;grid-template-columns:.84fr 1.16fr}
+ .page-hero__arc{right:-210px}
+}
+@media(max-width:760px){
+ html{scroll-padding-top:86px}
+ body{font-size:17px}
+ .container{width:calc(100% - 40px)}
+ h2{font-size:clamp(2.2rem,7vw,3.3rem)}
+ .announcement{font-size:.75rem;gap:7px;min-height:34px;padding:6px 11px}
+ .announcement__academic{display:none}
+ .header-inner{min-height:77px;padding-inline:20px}
+ .main-nav{top:77px;max-height:calc(100dvh - 77px)}
+ .brand-symbol{width:49px;height:55px;flex-basis:49px}
+ .brand-wordmark strong{font-size:.92rem!important}
+ .brand-wordmark .brand-subline {font-size:.48rem!important}
+ .atelier-hero{padding-top:36px}
+ .atelier-hero:before {width:100%;height:37%;bottom:0;top:auto}
+ .atelier-hero__grid {grid-template-columns:1fr;gap:30px}
+ .atelier-hero__copy{padding:0}
+ .atelier-hero__rule {max-width:100%;margin-bottom:34px;font-size:.72rem}
+ .atelier-hero__copy h1{font-size:clamp(3.75rem,10vw,5.8rem);max-width:12ch}
+ .atelier-hero__copy .lead {font-size:1.1rem;max-width:60ch}
+ .atelier-hero__copy .btn {width:auto}
+ .atelier-hero__visual{height:clamp(310px,66vw,490px);width:calc(100% - 12px)}
+ .atelier-hero__visual:before{inset:13px -12px -13px 12px}
+ .atelier-hero__foot{margin-top:35px;padding-block:20px}
+ .atelier-principle__inner {grid-template-columns:60px 1fr;min-height:160px}
+ .atelier-principle__number {display:none}
+ .atelier-principle p {font-size:clamp(1.5rem,4.2vw,2.15rem)}
+ .atelier-move,.atelier-move--reverse{grid-template-columns:40px minmax(0,1fr);gap:10px 20px}
+ .atelier-move__visual,.atelier-move--reverse .atelier-move__visual {grid-column:2;grid-row:1}
+ .atelier-move__number,.atelier-move--reverse .atelier-move__number {grid-column:1;grid-row:1}
+ .atelier-move__copy,.atelier-move--reverse .atelier-move__copy {grid-column:2;grid-row:2}
+ .atelier-move__copy h3{font-size:clamp(2.6rem,7vw,4rem)}
+ .atelier-manifesto__grid{grid-template-columns:1fr;gap:35px}
+ .atelier-manifesto h2{max-width:16ch}
+ .atelier-manifesto__copy p{max-width:65ch}
+ .atelier-manifesto__stroke{right:-140px;top:-110px}
+ .atelier-next__inner{grid-template-columns:1fr;gap:25px}
+ .atelier-next__side{max-width:none}
+ .atelier-next__button{grid-column:1}
+ .page-hero--atelier{padding:55px 0 60px;min-height:0}
+ .page-hero__overline{margin-bottom:45px}
+ .page-hero--atelier h1{font-size:clamp(3rem,8vw,4.7rem)}
+ .page-hero__arc{right:-260px;opacity:.65}
+ .split,.modality-detail,.modality-detail.flip,.contact-layout {grid-template-columns:1fr;gap:36px}
+ .modality-detail.flip .detail-copy{order:2}.modality-detail.flip .image-frame{order:1}
+ .blob-panel{min-height:320px}
+ .grid-3{grid-template-columns:1fr}
+ .grid-3 > *,.grid-3>*:last-child{border-right:0;padding:26px 0}
+ .team-grid{grid-template-columns:1fr}
+ .team-card:nth-child(even){padding-left:0;border-left:0}
+ .pricing-grid{grid-template-columns:1fr}
+ .pricing-card{padding:35px}
+ .rules-grid {grid-template-columns:1fr}
+ .learning-card {grid-template-columns:60px 1fr;column-gap:15px}
+ .learning-glyph {font-size:3.8rem}
+ .form-grid{grid-template-columns:1fr}
+ .atelier-footer__top{grid-template-columns:1fr;gap:28px}
+ .atelier-footer__nav{grid-template-columns:1fr;gap:30px}
+ .atelier-footer__nav nav:last-child {flex-direction:row;flex-wrap:wrap;gap:13px 24px}
+ .atelier-footer__bottom{flex-direction:column;gap:5px}
+}
+@media(max-width:430px){
+ .container{width:calc(100% - 36px)}
+ .announcement{font-size:.69rem}
+ .announcement__sep{display:none}
+ .header-inner{padding-inline:16px;min-height:74px}
+ .main-nav{top:74px;max-height:calc(100dvh - 74px)}
+ .brand{gap:5px}
+ .brand-symbol{width:45px;height:52px;flex:0 0 45px}
+ .brand-wordmark strong{font-size:.83rem!important}
+ .brand-wordmark .brand-subline{font-size:.43rem!important}
+ .menu-toggle{width:49px;height:49px}
+ .atelier-hero__copy h1{font-size:clamp(3.1rem,12.5vw,4rem)}
+ .atelier-hero__copy .eyebrow{font-size:.73rem}
+ .atelier-hero__copy .hero-actions{display:grid;grid-template-columns:1fr;align-items:stretch}
+ .atelier-hero__copy .btn,.atelier-hero__copy .text-link {width:100%;justify-content:center}
+ .atelier-hero__visual{height:300px}
+ .atelier-hero__visual figcaption{font-size:.64rem}
+ .atelier-hero__foot{flex-direction:column;gap:5px;font-size:.73rem}
+ .atelier-principle__inner{grid-template-columns:35px 1fr;gap:18px}
+ .atelier-principle__star{font-size:2.4rem}
+ .atelier-principle p{font-size:1.5rem}
+ .atelier-move,.atelier-move--reverse {grid-template-columns:29px minmax(0,1fr);column-gap:14px}
+ .atelier-move__visual{aspect-ratio:1.35}
+ .atelier-move__copy h3{font-size:2.9rem}
+ .atelier-manifesto h2{font-size:3.25rem}
+ .page-hero__overline{font-size:.67rem}
+ .page-hero--atelier h1{font-size:clamp(2.65rem,11vw,3.5rem)}
+ .page-hero__closing{font-size:.62rem}
+ .contact-card{padding:22px}
+ .atelier-footer__nav nav:first-child{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .atelier-footer__statement>p:not(.eyebrow){font-size:2.5rem}
+ .learning-card {grid-template-columns:1fr}
+ .learning-glyph{display:none}
+ .learning-card .learning-index,.learning-card h2,.learning-card>p {grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){
+ html {scroll-behavior:auto}
+ *,*::before,*::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+/* Refluxo de texto ampliado: grades não devem impedir a quebra das palavras. */
+.atelier-section-head > *, .atelier-manifesto__grid > *,
+.atelier-footer__top > *, .atelier-next__inner > *,
+.atelier-footer__nav > *, .atelier-move > *, .atelier-hero__grid > * {min-width:0}
+.atelier-footer__statement,.atelier-section-head,.atelier-manifesto__copy {min-width:0}
+.atelier-footer .footer-route {max-width:100%;flex-wrap:wrap;overflow-wrap:anywhere}
+@media(max-width:760px){
+ .two-panel {grid-template-columns:minmax(0,1fr)}
+ .atelier-section-head,.atelier-manifesto__grid,.atelier-footer__top {grid-template-columns:minmax(0,1fr)}
+ .atelier-hero__grid{grid-template-columns:minmax(0,1fr)}
+ .atelier-next__inner{grid-template-columns:minmax(0,1fr)}
+ .page-hero__grid{min-width:0}
+ .page-hero--atelier h1,h2,h3,.eyebrow,.atelier-footer__statement>p:not(.eyebrow) {overflow-wrap:anywhere}
+}
+/* Preços devem permanecer dentro do cartão com texto ampliado a 200%. */
+.pricing-card,.pricing-card .plan-price{min-width:0;max-width:100%}
+.pricing-card .plan-price strong{display:inline;max-width:100%;overflow-wrap:anywhere}
+@media(max-width:430px){
+ .pricing-card {padding:26px}
+ .pricing-card .plan-price{font-size:clamp(2rem,8vw,3.1rem);line-height:1.12}
+ .pricing-card .plan-price strong{overflow-wrap:anywhere;word-break:normal}
+}
+/* Legibilidade de navegação e imagens integrais, sem cortar pessoas. */
+.main-nav > a:not(.btn) {font-size:.96rem}
+.header-cta {font-size:.94rem}
+.btn {font-size:1rem}
+.atelier-hero__visual {background:#E6F0E8}
+.atelier-hero__visual picture {display:grid;place-items:center}
+.atelier-hero__visual img {object-fit:contain;object-position:center;background:#E6F0E8}
+.atelier-hero__copy .lead {font-size:1.14rem}
+.pricing-card .plan-description,.pricing-card .check-list li,
+.modality-detail .check-list li {font-size:1.09rem}
+@media(max-width:760px){body{font-size:18px}}
+/* Enquadramento final da imagem: proporção original 3:2, zero recorte. */
+.atelier-hero__visual {height:auto;aspect-ratio:3/2;align-self:center}
+.atelier-hero__visual picture {height:100%;width:100%}
+.atelier-hero__visual img {width:100%;height:100%;object-fit:contain;object-position:center}
+@media(max-width:760px){.atelier-hero__visual {height:auto;aspect-ratio:3/2}}
+@media(max-width:430px){.atelier-hero__visual {height:auto;aspect-ratio:3/2}}

@@ -1,0 +1,1060 @@
+{
+  "tested": 130,
+  "pages": 13,
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1250,
+    1280,
+    1440,
+    1920
+  ],
+  "issues": [],
+  "original_logo_sha256": "efdc920e091b78daaaa609281fdd891dbd4cea85c062aa1d3d559dcc8db0d76f",
+  "records": [
+    {
+      "file": "acessibilidade.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "acessibilidade.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "agendamento.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "avaliacoes.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "contato.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "conteudos-educativos.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "equipe.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "index.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "modalidades.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "perguntas-frequentes.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "planos.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "politica-de-privacidade.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "sobre.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 320,
+      "w": 320,
+      "v": 320,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 360,
+      "w": 360,
+      "v": 360,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 390,
+      "w": 390,
+      "v": 390,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 430,
+      "w": 430,
+      "v": 430,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 768,
+      "w": 768,
+      "v": 768,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 1024,
+      "w": 1024,
+      "v": 1024,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 1250,
+      "w": 1250,
+      "v": 1250,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 1280,
+      "w": 1280,
+      "v": 1280,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 1440,
+      "w": 1440,
+      "v": 1440,
+      "broken": [],
+      "h1": 1
+    },
+    {
+      "file": "termos-e-cancelamento.html",
+      "width": 1920,
+      "w": 1920,
+      "v": 1920,
+      "broken": [],
+      "h1": 1
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+/* =====================================================================
+  EQUILÍBRIO ATIVO · ORGANIC MODERN WELLNESS / SOFT EDITORIAL
+  Direção derivada do símbolo da logo fornecida. Sem novas cores de marca.
+  Última camada visual; não contém lógica comercial, contatos ou formulários.
+===================================================================== */
+:root {
+  --brand-primary:#0F2B48;
+  --brand-secondary:#1C6672;
+  --brand-accent:#F0997F;
+  --brand-mint:#77B097;
+  --brand-sun:#F5CC72;
+  --surface-base:#FBF9F4;
+  --surface-alt:#E8F1E8;
+  --surface-clean:#FFFFFF;
+  --text-primary:#0F2B48;
+  --text-secondary:#455A66;
+  --border-subtle:#CBDAD4;
+  --radius-sm:12px; --radius-md:20px; --radius-lg:28px;
+  --radius-pill:999px;
+  --space-1:8px; --space-2:12px; --space-3:16px; --space-4:24px;
+  --space-5:32px; --space-6:48px; --space-7:64px; --space-8:80px; --space-9:112px;
+  --container-max:1280px;
+  --font:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --display:var(--font);
+  --serif:var(--font);
+  --max:var(--container-max);
+}
+html {scroll-padding-top:100px}
+body {font-family:var(--font);font-weight:400;font-size:18px;line-height:1.6;color:var(--text-primary);background:var(--surface-clean);min-width:0;overflow-x:clip}
+.container {width:min(var(--container-max),calc(100% - 96px))}
+main,section,article,figure,div {min-width:0}
+p,li,.rule span,.detail-copy p {line-height:1.6}
+p,.lead {max-width:65ch}
+.lead,.atelier-hero__copy .lead {font-family:var(--font);font-size:20px;line-height:1.6;font-weight:400;letter-spacing:0;color:var(--text-secondary)}
+h1,h2,h3,h4 {font-family:var(--font);font-weight:600;letter-spacing:-.045em;line-height:1.16;overflow-wrap:normal}
+h2 {font-size:clamp(32px,3.5vw,44px);line-height:1.17;max-width:24ch}
+h3{font-size:26px;line-height:1.2}
+.eyebrow,.page-hero__overline,.atelier-hero__rule {font-family:var(--font);letter-spacing:.045em;font-weight:600;text-transform:none}
+.eyebrow {font-size:15px;line-height:1.45;margin-bottom:20px}
+.small,.muted,.note-panel p,.photo-concept-label {font-size:16px;line-height:1.6}
+.section {padding-block:var(--space-9)}
+.section-soft {background:var(--surface-base)}
+.section-heading {max-width:780px;margin-bottom:40px}
+.section-heading.center {text-align:left}
+.section-heading h2{font-size:44px}
+:focus-visible {outline:3px solid #1C6672;outline-offset:4px}
+:where(a,button,input,select,textarea,summary):focus-visible {outline:3px solid var(--brand-secondary);outline-offset:4px}
+/* FULL-WIDTH HEADER · ORIGINAL LOGO, NO RECONSTRUCTED TYPE */
+.announcement{min-height:32px;font-size:12px;font-weight:500;letter-spacing:0;gap:10px;padding:5px 24px}
+.site-header {border-color:var(--border-subtle);background:#FFF;backdrop-filter:none;transition:min-height .2s ease,background-color .2s ease}
+.header-inner {height:88px;min-height:88px;max-width:none;width:100%;padding-inline:clamp(48px,4vw,84px);display:grid;grid-template-columns:94px minmax(0,1fr) auto;gap:32px;align-items:center;transition:height .2s ease,min-height .2s ease}
+.site-header.is-compact .header-inner{height:72px;min-height:72px}
+.brand {display:flex;align-items:center;gap:0;justify-self:start;width:85px;height:84px;flex-shrink:0}
+.brand-logo-original {width:85px;height:84px;object-fit:contain;display:block;max-width:none}
+.site-header.is-compact .brand,.site-header.is-compact .brand-logo-original{height:68px}
+.main-nav {justify-self:end;gap:clamp(12px,1.5vw,25px);align-items:center}
+.main-nav>a:not(.btn){font-size:16px;font-family:var(--font);font-weight:500;padding:15px 0;color:var(--brand-primary)}
+.main-nav>a:not(.btn)::after{background:var(--brand-secondary);height:2px;bottom:10px}
+.main-nav>a[aria-current=page]{font-weight:700}
+.header-actions {justify-content:flex-end}
+.header-cta,.btn,.atelier-next__button {border-radius:var(--radius-pill);font-family:var(--font);font-weight:600;font-size:17px;line-height:1.4;min-height:52px;padding:12px 28px;gap:12px;box-shadow:none!important;transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.header-cta {font-size:16px;padding:10px 22px;background:var(--brand-secondary);color:white}
+.header-cta:hover,.btn-primary:hover,.atelier-next__button:hover{background:var(--brand-primary);color:white}
+.btn:hover {transform:translateY(-2px)}
+.btn-primary {background:var(--brand-secondary);color:#FFF;border-color:var(--brand-secondary)}
+.btn-outline {background:transparent;color:var(--brand-primary);border:1.5px solid var(--brand-primary)}
+.btn-outline:hover{background:var(--surface-alt);border-color:var(--brand-secondary)}
+.text-link {font-size:17px;font-weight:600;color:var(--brand-secondary);text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:currentColor;text-underline-offset:5px}
+.text-link:hover{text-decoration-thickness:2px}
+.menu-toggle{border-radius:var(--radius-sm);width:52px;height:52px;border:1.5px solid var(--border-subtle);background:#FFF}
+/* HERO 45/55 with calm asymmetry and genuinely organic photographic mask */
+.atelier-home {overflow:visible}
+.atelier-hero {background:var(--surface-base);padding:var(--space-8) 0 0}
+.atelier-hero:before{background:var(--surface-alt);width:17%;height:100%;top:0;right:0}
+.atelier-hero__grid {grid-template-columns:minmax(0,45fr) minmax(0,55fr);gap:48px;min-height:0;align-items:center}
+.atelier-hero__copy {padding:0;position:relative;z-index:2}
+.atelier-hero__rule {max-width:100%;margin-bottom:48px;padding-top:14px;font-size:12px;color:var(--brand-secondary);letter-spacing:.04em}
+.atelier-hero__copy .eyebrow {font-size:15px;letter-spacing:.02em;color:var(--brand-secondary);font-weight:600;margin-bottom:24px}
+.atelier-hero__copy h1 {font-family:var(--font);font-size:clamp(52px,4.7vw,64px);font-weight:600;line-height:1.1;letter-spacing:-.055em;max-width:560px;margin-bottom:26px}
+.atelier-hero__copy h1 em{font-family:var(--font);font-style:normal;font-size:inherit;font-weight:600;color:var(--brand-secondary);letter-spacing:inherit}
+.atelier-hero__subtitle {font-size:23px;font-weight:600;letter-spacing:-.025em;line-height:1.3;margin-bottom:18px}
+.atelier-hero__copy .lead {font-size:20px;line-height:1.55;max-width:480px;margin-bottom:34px}
+.atelier-hero__copy .hero-actions{display:flex;gap:16px 25px;align-items:center;flex-wrap:wrap}
+.organic-hero-photo {aspect-ratio:auto!important;min-height:0!important;height:auto!important;width:100%!important;display:flex;flex-direction:column;align-self:stretch;justify-content:center;position:relative;overflow:visible!important;background:transparent!important;margin:0;padding:0}
+.organic-hero-photo:before{content:''!important;display:block!important;position:absolute;top:6%;right:-3%;bottom:13%;left:8%;border:1.7px solid var(--brand-mint);z-index:0;opacity:.72;transform:translate(14px,-7px);border-radius:38% 12% 32% 10% / 22% 35% 18% 28%;pointer-events:none}
+.organic-hero-photo picture {position:relative;z-index:1;display:block;width:100%;aspect-ratio:4/5;height:auto!important;overflow:hidden;border-radius:38% 12% 32% 10% / 22% 35% 18% 28%}
+.organic-hero-photo picture img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:66% center!important;background:transparent!important;filter:none!important;display:block}
+.organic-hero-photo figcaption {display:block;position:static!important;background:transparent!important;color:var(--text-secondary);padding:16px 0 0!important;font:400 14px/1.4 var(--font);letter-spacing:0;text-align:right;text-transform:none;z-index:2}
+.atelier-hero__foot{padding-block:20px;margin-top:42px;font-size:13px;font-weight:500;letter-spacing:0}
+/* PURPOSE: brand is expressive without decorative starbursts */
+.atelier-principle {background:var(--brand-primary)}
+.atelier-principle__inner{grid-template-columns:64px 1fr auto;min-height:170px;gap:32px}
+.atelier-principle__leaf {width:60px;height:64px;display:block}
+.atelier-principle__leaf img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) brightness(0) invert(1);opacity:.8}
+.atelier-principle p{font:600 clamp(24px,2.5vw,36px)/1.3 var(--font);letter-spacing:-.035em;color:#FFF;max-width:37ch}
+.atelier-principle p em {font-family:var(--font);font-style:normal;color:var(--brand-sun);font-weight:600}
+.atelier-principle__number {font-size:13px;font-weight:500;color:#E2EEEA}
+/* SERVICES: photographs instead of unrelated graphic numerals; layout not cloned */
+.atelier-moves {background:#FFF}
+.atelier-section-head {gap:64px;align-items:end;margin-bottom:48px}
+.atelier-section-head h2{font-size:44px;line-height:1.17;letter-spacing:-.045em;max-width:25ch}
+.atelier-section-head h2 em {font-family:var(--font);font-style:normal;font-weight:600;color:var(--brand-secondary)}
+.atelier-section-head>p{font-size:18px;line-height:1.6;color:var(--text-secondary);max-width:27ch}
+.atelier-move {gap:28px;align-items:center;padding-block:44px}
+.atelier-move .atelier-move__number{font-size:16px;font-weight:600;letter-spacing:0}
+.organic-service-photo {overflow:hidden;border-radius:var(--radius-md) !important;aspect-ratio:4/3;background:var(--surface-alt);padding:0!important}
+.organic-service-photo picture {display:block;width:100%;height:100%}
+.organic-service-photo img {display:block;width:100%;height:100%;object-fit:cover;object-position:54% center;filter:none}
+.atelier-move--reverse .organic-service-photo img{object-position:53% center}
+.atelier-move__copy .eyebrow {font-size:14px}
+.atelier-move__copy h3 {font-size:clamp(38px,3.9vw,52px);font-weight:600}
+.atelier-move__copy h3 span {color:var(--brand-accent)}
+.atelier-move__copy p {font-size:18px;line-height:1.6;max-width:32ch}
+/* BENEFITS: border-separated facts, not cards */
+.atelier-manifesto {background:var(--brand-secondary)}
+.atelier-manifesto__grid {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start;padding-block:112px}
+.atelier-manifesto h2 {font-family:var(--font);font-weight:600;font-size:clamp(40px,4.2vw,60px);line-height:1.13;letter-spacing:-.052em;max-width:15ch}
+.atelier-manifesto h2 em{font-family:var(--font);font-style:normal;font-weight:600;color:var(--brand-sun)}
+.atelier-manifesto__copy >p{font-size:18px;line-height:1.6;max-width:43ch}
+.atelier-manifesto__copy .text-link{color:#FFF;display:inline-flex;margin-top:15px}
+.atelier-manifesto__stroke {opacity:.13;right:-55px;top:0;max-width:20vw}
+.organic-benefits {border-top:1px solid rgba(255,255,255,.4);margin:0 0 35px}
+.organic-benefit {display:grid;grid-template-columns:minmax(120px,.52fr) minmax(0,1fr);gap:22px;border-bottom:1px solid rgba(255,255,255,.35);padding:22px 0;align-items:baseline}
+.organic-benefit strong{font-size:19px;line-height:1.4;font-weight:600;color:#FFF}
+.organic-benefit p{margin:0;font-size:16px;line-height:1.55;color:#E9F5EE}
+/* Calm closing CTA */
+.atelier-next {background:var(--surface-base)}
+.atelier-next__inner{padding-block:80px;grid-template-columns:100px 1fr auto;gap:36px;align-items:center}
+.atelier-next h2 {font-size:44px;font-weight:600}
+.atelier-next h2 em{font-family:var(--font);font-weight:600;font-style:normal;color:var(--brand-secondary)}
+.atelier-next__inner p{font-size:18px}
+.atelier-next__button {background:var(--brand-primary);color:#FFF}
+/* Interior article covers stay light, with accent rhythm rather than decorative backgrounds */
+.page-hero--atelier {padding:64px 0 72px;min-height:0;background:var(--surface-base)}
+.page-hero--atelier[data-theme="ink"] {background:var(--brand-primary);color:white}
+.page-hero--atelier[data-theme="paper"]{background:var(--surface-base)}
+.page-hero--atelier[data-theme="mint"]{background:var(--surface-alt)}
+.page-hero__overline {margin-bottom:56px;padding-top:14px;font-size:13px;opacity:1;letter-spacing:.04em}
+.page-hero .breadcrumb{font-size:16px;line-height:1.5;margin-bottom:20px}
+.page-hero--atelier h1{font-size:clamp(42px,4.7vw,64px);font-weight:600;line-height:1.12;letter-spacing:-.055em;max-width:20ch}
+.page-hero--atelier .lead,.page-hero--atelier .container>p:not(.eyebrow){font-size:20px;line-height:1.6;max-width:57ch}
+.page-hero__arc {opacity:.30;right:-90px;max-width:32%;pointer-events:none}
+.page-hero__closing {font-size:13px;font-weight:500;letter-spacing:.03em;margin-top:54px}
+.page-hero--atelier+.section {padding-top:var(--space-9)}
+/* studio: image on left; full original mockup as a conceptual, not real-estate photo */
+.page-sobre .split {grid-template-columns:minmax(0,55fr) minmax(0,45fr);gap:64px;align-items:center}
+.page-sobre .split >div:first-child {grid-column:2;grid-row:1}
+.page-sobre .split >.organic-about-image-wrap {grid-column:1;grid-row:1}
+.organic-about-image-wrap{min-width:0}
+.organic-about-image-wrap .atelier-featured-art {padding:30px;aspect-ratio:4/5;min-height:0;border-radius:var(--radius-md);background:var(--surface-alt);overflow:hidden}
+.organic-about-image-wrap .atelier-featured-art img {width:100%;height:100%;object-fit:contain;object-position:center;max-height:none;filter:none}
+.organic-about-image-wrap .blob-caption {position:absolute;bottom:16px;left:16px;right:16px;background:var(--brand-primary);color:#FFF;border-radius:var(--radius-sm);padding:12px 15px;font-size:14px;line-height:1.45}
+.photo-concept-label {font-size:15px;margin:14px 0 0;color:var(--text-secondary)}
+.page-sobre .split h2 {font-size:44px;max-width:15ch}
+.page-sobre .split p {font-size:18px;max-width:60ch}
+/* values as editorial divided rows; not 3 identical cards */
+.organic-values {grid-template-columns:1fr;max-width:950px;border-top:1px solid var(--border-subtle)}
+.organic-values > * {display:grid;grid-template-columns:minmax(170px,28%) minmax(0,1fr);gap:28px;border:0;border-bottom:1px solid var(--border-subtle);padding:34px 0}
+.organic-values h3 {font-size:26px;line-height:1.3;margin:0}
+.organic-values p{font-size:18px;line-height:1.6;margin:0}
+/* modality detail: calm photographs, subtle shape distinction */
+.modality-detail,.modality-detail.flip {gap:64px;align-items:center}
+.modality-detail .image-frame{background:var(--surface-alt);border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3}
+.modality-detail #funcional .image-frame,.modality-detail .image-frame.pink {background:var(--surface-base)}
+.modality-detail .image-frame picture{display:block;width:100%;height:100%}
+.modality-detail .image-frame img{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:54% center}
+.modality-detail .image-caption{font-size:14px;line-height:1.4;padding:10px 15px;position:absolute;bottom:0;left:0;right:0;background:rgba(15,43,72,.94);color:#FFF}
+.modality-detail .detail-copy h2{font-size:44px;font-weight:600;margin-top:28px}
+.modality-detail .detail-copy p,.modality-detail .check-list li {font-size:18px;line-height:1.6}
+.info-chip {border-radius:var(--radius-pill);font-size:15px;line-height:1.3;padding:10px 16px}
+.plain-card {border-left:2px solid var(--brand-mint)}
+/* Team placeholders: names not linked to invented AI portraits */
+.team-grid {grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}
+.team-card,.team-card:nth-child(even){border-left:0;padding:35px 0;border-bottom:1px solid var(--border-subtle)}
+.organic-team-portrait{display:flex;height:auto;aspect-ratio:3/4;max-width:260px;width:100%;align-items:end;justify-content:start;background:var(--surface-alt);border-radius:var(--radius-md);margin:0 0 24px;overflow:hidden;position:relative}
+.organic-team-portrait::after {content:'';position:absolute;right:4%;top:10%;width:70%;height:105%;border:2px solid rgba(28,102,114,.24);transform:rotate(-18deg);border-radius:40% 10% 20% 45%}
+.organic-team-portrait span {font-size:50px;font-weight:600;color:var(--brand-secondary);line-height:1;margin:24px;position:relative;z-index:1}
+.team-card .team-index{font-size:14px;margin-bottom:12px}
+.team-card h3{font-size:26px;margin-bottom:14px}
+.team-card p{font-size:18px}
+/* Plan comparison, no invented endorsement */
+.pricing-grid {gap:24px;max-width:1120px}
+.pricing-card,.pricing-card.organic-pricing-secondary {border:1px solid var(--border-subtle);border-radius:24px;box-shadow:none;background:var(--surface-base);padding:32px;color:var(--brand-primary)}
+.pricing-card.organic-pricing-secondary {background:var(--surface-base);border-color:var(--border-subtle)}
+.pricing-card h3 {font-size:26px;font-weight:600}
+.pricing-card .plan-description,.pricing-card.organic-pricing-secondary .plan-description{color:var(--text-secondary);font-size:18px}
+.pricing-card .pricing-index,.pricing-card.organic-pricing-secondary .pricing-index {color:var(--brand-secondary);font-size:15px}
+.pricing-card .plan-price {font-size:clamp(33px,3.2vw,48px);line-height:1.2;font-weight:600;letter-spacing:-.035em;color:var(--brand-primary);margin:20px 0 26px;overflow-wrap:anywhere}
+.pricing-card .plan-price strong{font-size:inherit}
+.pricing-card .plan-price span{font-size:16px}
+.pricing-card .check-list{border-color:var(--border-subtle)}
+.pricing-card .check-list li {font-size:18px}
+.pricing-card .small,.pricing-card.organic-pricing-secondary .small{font-size:15px;color:var(--text-secondary)}
+/* Contact/education/FAQ remain descriptive, no card factory */
+.contact-card {border-radius:24px;padding:32px;border:1px solid var(--border-subtle)}
+.contact-detail strong,.rule strong{font-size:18px;font-weight:600}
+.contact-detail p,.rule span,.learning-card>p,.grid-3 p {font-size:18px;line-height:1.6}
+.field label {font-size:17px;font-weight:600}
+.field input,.field textarea,.field select {border-radius:12px;font-size:17px;min-height:52px}
+.faq-list summary {font-size:21px;font-weight:600}
+.faq-list .faq-answer{font-size:18px;line-height:1.6}
+.learning-card h2{font-size:32px;line-height:1.2}
+.learning-glyph{font-family:var(--font);font-weight:500}
+.note-panel,.notice,.academic-note {border-radius:var(--radius-md)}
+/* footer / no unrelated brand colors */
+.atelier-footer {background:var(--brand-primary)}
+.atelier-footer .brand {width:108px;height:108px;background:var(--surface-base);border-radius:16px;padding:7px}
+.atelier-footer .brand-logo-original{width:94px;height:94px;filter:none;opacity:1}
+.atelier-footer__statement>p:not(.eyebrow){font:600 clamp(28px,3.5vw,44px)/1.17 var(--font);letter-spacing:-.045em}
+.atelier-footer__statement>p:not(.eyebrow) em{font-family:var(--font);font-style:normal;font-weight:600;color:#BEE0D0}
+.atelier-footer__nav nav a,.atelier-footer__bottom{font-size:16px}
+.back-to-top {border-radius:50%;width:54px;height:54px}
+/* TABLET 8-column physical grid; forms/content collapse only as needed */
+@media (max-width:1250px) {
+  .container{width:calc(100% - 64px)}
+  .header-inner{padding-inline:32px;height:80px;min-height:80px;grid-template-columns:90px 1fr;gap:24px}
+  .site-header.is-compact .header-inner{height:72px;min-height:72px}
+  .header-actions{grid-column:2;grid-row:1}
+  .main-nav{position:fixed;top:80px;left:0;right:0;max-height:calc(100dvh - 80px);display:none;background:#FFF;box-shadow:0 16px 25px rgba(15,43,72,.08);border-bottom:1px solid var(--border-subtle);padding:16px 32px 30px;align-items:stretch;white-space:normal;overflow:auto;gap:0}
+  .main-nav.is-open {display:flex;flex-direction:column}
+  .main-nav>a:not(.btn){font-size:18px;min-height:52px;padding:14px 10px;text-align:center;border-bottom:1px solid var(--border-subtle)}
+  .menu-toggle{display:flex;justify-self:end}
+  .header-cta{display:none}
+  .nav-mobile-cta {display:flex!important;margin:20px auto 0;width:min(100%,400px)}
+  .atelier-hero__grid {gap:32px}
+  .atelier-hero__copy h1{font-size:clamp(46px,5vw,58px)}
+  .atelier-hero__copy .lead{font-size:18px}
+  .atelier-manifesto__grid {gap:38px}
+  .atelier-next__inner {grid-template-columns:1fr 3fr;gap:24px}
+  .atelier-next__button{grid-column:2}
+}
+/* MOBILE 4-column grid; original image is never distorted; text precedes photo */
+@media (max-width:767px) {
+  html{scroll-padding-top:84px}
+  .container {width:calc(100% - 40px)}
+  body {font-size:18px;line-height:1.6}
+  h1,.atelier-hero__copy h1,.page-hero--atelier h1 {font-size:38px;line-height:1.15;letter-spacing:-.045em;overflow-wrap:break-word}
+  h2,.atelier-section-head h2,.atelier-next h2,.page-sobre .split h2,.section-heading h2 {font-size:32px;line-height:1.2}
+  h3,.pricing-card h3,.team-card h3 {font-size:23px}
+  .section,.page-hero--atelier+.section {padding-block:64px}
+  .header-inner {padding-inline:20px;height:72px;min-height:72px;grid-template-columns:75px 1fr}
+  .site-header.is-compact .header-inner{height:72px;min-height:72px}
+  .brand,.brand-logo-original{width:72px;height:72px}
+  .main-nav{top:72px;max-height:calc(100dvh - 72px);padding:12px 20px 28px}
+  .announcement {font-size:12px;line-height:1.4}
+  .atelier-hero{padding-top:48px}
+  .atelier-hero:before{width:100%;height:24%;top:auto;bottom:0}
+  .atelier-hero__grid {grid-template-columns:minmax(0,1fr);gap:32px;min-height:0}
+  .atelier-hero__copy {grid-row:1}
+  .atelier-hero__rule {margin-bottom:28px;font-size:12px}
+  .atelier-hero__copy .eyebrow {font-size:15px;line-height:1.4}
+  .atelier-hero__copy h1{font-size:38px;max-width:13ch;margin-bottom:17px}
+  .atelier-hero__subtitle{font-size:21px;margin-bottom:12px}
+  .atelier-hero__copy .lead {font-size:18px;line-height:1.6;max-width:65ch}
+  .atelier-hero__copy .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:14px}
+  .atelier-hero__copy .btn,.atelier-hero__copy .text-link{min-height:52px;font-size:16px;width:100%;justify-content:center}
+  .organic-hero-photo{grid-row:2;display:flex;width:100%!important;aspect-ratio:auto!important;margin:0!important}
+  .organic-hero-photo picture{aspect-ratio:4/5;border-radius:38% 12% 32% 10% / 22% 35% 18% 28%}
+  .organic-hero-photo picture img{object-position:center!important}
+  .organic-hero-photo:before {inset:3% -2% 17% 5%;transform:none}
+  .organic-hero-photo figcaption{font-size:13px;padding-top:12px!important;text-align:left}
+  .atelier-hero__foot{margin-top:22px;padding-block:14px;flex-direction:column;gap:4px;font-size:13px}
+  .atelier-principle__inner{grid-template-columns:44px minmax(0,1fr);gap:20px;min-height:150px;padding-block:28px}
+  .atelier-principle__leaf{width:42px;height:46px}
+  .atelier-principle p{font-size:24px;line-height:1.3}
+  .atelier-section-head{display:block;margin-bottom:32px}
+  .atelier-section-head>p{font-size:18px;max-width:65ch;margin-top:24px}
+  .atelier-move,.atelier-move--reverse{grid-template-columns:1fr;gap:14px;padding-block:34px}
+  .atelier-move__number,.atelier-move--reverse .atelier-move__number{grid-column:1;grid-row:1}
+  .atelier-move__visual,.atelier-move--reverse .atelier-move__visual{grid-column:1;grid-row:2}
+  .atelier-move__copy,.atelier-move--reverse .atelier-move__copy{grid-column:1;grid-row:3}
+  .organic-service-photo{aspect-ratio:4/3}
+  .atelier-move__copy h3{font-size:36px}
+  .atelier-move__copy p {font-size:18px;max-width:65ch}
+  .atelier-manifesto__grid {grid-template-columns:minmax(0,1fr);gap:32px;padding-block:64px}
+  .atelier-manifesto h2 {font-size:38px;max-width:20ch}
+  .atelier-manifesto__stroke{max-width:30vw;right:-70px;top:10px;opacity:.09}
+  .organic-benefit{grid-template-columns:1fr;gap:4px;padding:18px 0}
+  .organic-benefit p {font-size:17px}
+  .atelier-next__inner{grid-template-columns:1fr;gap:18px;padding-block:64px}
+  .atelier-next__button{grid-column:1;justify-self:stretch;text-align:center;justify-content:center;min-height:52px}
+  .page-hero--atelier {padding:48px 0 60px;min-height:0}
+  .page-hero__overline {margin-bottom:38px}
+  .page-hero--atelier h1 {font-size:38px;max-width:20ch}
+  .page-hero--atelier .lead {font-size:18px}
+  .page-hero__closing {font-size:13px;margin-top:38px}
+  .page-hero__arc {opacity:.15;max-width:40%;right:-130px}
+  .split,.page-sobre .split,.modality-detail,.modality-detail.flip,.contact-layout {grid-template-columns:1fr;gap:32px}
+  .page-sobre .split>div:first-child {grid-column:1;grid-row:1}
+  .page-sobre .split>.organic-about-image-wrap{grid-column:1;grid-row:2}
+  .organic-about-image-wrap .atelier-featured-art{max-width:500px;margin-inline:0}
+  .organic-values>* {grid-template-columns:1fr;gap:10px;padding:24px 0}
+  .modality-detail.flip .image-frame{order:1}
+  .modality-detail.flip .detail-copy{order:2}
+  .modality-detail .image-frame{aspect-ratio:4/3}
+  .modality-detail .detail-copy h2{font-size:32px}
+  .team-grid{grid-template-columns:1fr;gap:0}
+  .team-card,.team-card:nth-child(even){padding:30px 0}
+  .organic-team-portrait {max-width:220px}
+  .pricing-grid,.rules-grid,.two-panel {grid-template-columns:1fr}
+  .pricing-card,.pricing-card.organic-pricing-secondary {padding:32px 24px}
+  .pricing-card .plan-price{font-size:clamp(32px,8.5vw,42px)}
+  .faq-list summary{font-size:20px;line-height:1.5}
+  .contact-card{padding:24px}
+  .grid-3{grid-template-columns:1fr}
+  .atelier-footer .brand {width:98px;height:98px}
+  .atelier-footer .brand-logo-original{width:84px;height:84px}
+  .atelier-footer__top {grid-template-columns:1fr;gap:36px}
+  .atelier-footer__nav{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:390px){
+  .container{width:calc(100% - 40px)}
+  .header-inner{padding-inline:20px}
+  .announcement__sep{display:none}
+  .atelier-hero__copy .eyebrow{font-size:14px}
+  .atelier-hero__copy h1{font-size:38px}
+  .organic-hero-photo figcaption {font-size:12px}
+  .pricing-card .plan-price{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+/* Avoid percentage-height grid collapse in narrow browsers: service photos are normal block media. */
+.atelier-move .organic-service-photo,
+.atelier-move--reverse .organic-service-photo {display:block!important;position:relative;aspect-ratio:4/3;min-height:0}
+.organic-service-photo picture {display:block;width:100%;height:auto;aspect-ratio:4/3}
+.organic-service-photo picture img {display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;object-position:51% center}
+/* Curvas decorativas confinadas à própria seção; não criam rolagem horizontal. */
+.atelier-manifesto {overflow:clip}
+.atelier-manifesto__stroke {right:0;max-width:18vw}
+@media(max-width:767px){.atelier-manifesto__stroke{right:0;max-width:24vw}}
+html {overflow-x:clip}

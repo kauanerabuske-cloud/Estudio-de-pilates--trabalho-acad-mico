@@ -1,0 +1,44 @@
+/* Campanha fotográfica | Equilíbrio Ativo — marcas originais preservadas */
+:root { --ea-foto-paper: #FBF9F4; }
+.atelier-hero__visual {
+  background: #E8F1E8;
+  border-radius: 2px;
+  aspect-ratio: 1.04;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+}
+.atelier-hero__visual:before { display: none; }
+.atelier-hero__visual picture,.atelier-hero__visual img {width:100%;height:100%;display:block}
+.atelier-hero__visual img {object-fit:cover;object-position:100% 52%;filter:none}
+.atelier-hero__visual figcaption {
+  background: linear-gradient(to top,rgba(15,43,72,.88),rgba(15,43,72,0));
+  font-size:clamp(.64rem,.7vw,.75rem);
+  padding:30px 15px 12px;
+  line-height:1.5;
+}
+.atelier-hero__visual-index {right:0;top:0;z-index:2}
+.atelier-hero:before{background:#E8F1E8}
+/* Homepage service navigation intentionally uses a graphic glyph, not duplicated campaign photos. */
+.atelier-move__visual--graphic {isolation:isolate;overflow:hidden;display:flex;justify-content:flex-start;align-items:flex-end;padding:clamp(20px,4vw,50px)}
+.atelier-move__visual-number{font-family:var(--display);font-size:clamp(6rem,16vw,14rem);font-weight:600;line-height:.8;letter-spacing:-.1em;color:var(--navy);opacity:.9;position:relative;z-index:1}
+.atelier-move__visual-arc{position:absolute;right:-3%;top:-7%;width:82%;height:112%;color:var(--teal);opacity:.56;transform:translateX(3%)}
+.atelier-move__visual--coral .atelier-move__visual-arc{color:#B34E3F}
+.modality-detail .image-frame{min-width:0;aspect-ratio:590/318;overflow:hidden;background:#E5EDE8}
+.modality-detail .image-frame picture {display:block;width:100%;height:100%}
+.modality-detail .image-frame img {width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center 43%;filter:none}
+.modality-detail #funcional img {object-position:62% 45%}
+.modality-detail .image-caption{font-size:clamp(.73rem,.85vw,.9rem);background:rgba(15,43,72,.92);color:#fff;letter-spacing:0.01em;line-height:1.45}
+.blob-panel.atelier-featured-art{padding:0;background:#F7F5F0;min-height:0;align-items:stretch}
+.blob-panel.atelier-featured-art img{width:100%;max-width:none;max-height:420px;height:auto;display:block;object-fit:contain;object-position:center}
+.photo-concept-label{font-size:.85rem;font-weight:700;color:#345261;line-height:1.55;margin-top:13px}
+@media(max-width:950px){.atelier-hero__visual{aspect-ratio:1/1}}
+@media(max-width:760px){
+ .atelier-hero__visual{width:100%;aspect-ratio:4/3;max-height:none}
+ .atelier-hero__visual picture,.atelier-hero__visual img{height:100%}
+ .atelier-hero__visual img{object-position:56% 43%}
+ .atelier-move__visual-number{font-size:clamp(7rem,25vw,12rem)}
+ .modality-detail .image-frame{aspect-ratio:590/318}
+}
+@media(max-width:430px){.atelier-hero__visual{aspect-ratio:4/3;height:auto}.atelier-hero__visual figcaption{font-size:.67rem}.atelier-move__visual--graphic{padding:22px}.modality-detail .image-frame{aspect-ratio:1.40}}
+@media(prefers-reduced-motion:reduce){.atelier-move__visual--graphic *{transition:none!important}}
