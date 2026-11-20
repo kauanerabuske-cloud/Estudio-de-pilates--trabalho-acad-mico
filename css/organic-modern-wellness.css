@@ -51,10 +51,10 @@ h3{font-size:26px;line-height:1.2}
 .header-inner {height:88px;min-height:88px;max-width:none;width:100%;padding-inline:clamp(48px,4vw,84px);display:grid;grid-template-columns:94px minmax(0,1fr) auto;gap:32px;align-items:center;transition:height .2s ease,min-height .2s ease}
 .site-header.is-compact .header-inner{height:72px;min-height:72px}
 .brand {display:flex;align-items:center;gap:0;justify-self:start;width:85px;height:84px;flex-shrink:0}
-.brand-logo-original {width:85px;height:84px;object-fit:contain;display:block;max-width:none}
+.brand-logo-original {width:85px;height:84px;object-fit:contain;display:block;max-width:none;}
 .site-header.is-compact .brand,.site-header.is-compact .brand-logo-original{height:68px}
 .main-nav {justify-self:end;gap:clamp(12px,1.5vw,25px);align-items:center}
-.main-nav>a:not(.btn){font-size:16px;font-family:var(--font);font-weight:500;padding:15px 0;color:var(--brand-primary)}
+.main-nav>a:not(.btn){font: size 16px;font-family:var(--font);font-weight:500;padding:15px 0;color:var(--brand-primary)}
 .main-nav>a:not(.btn)::after{background:var(--brand-secondary);height:2px;bottom:10px}
 .main-nav>a[aria-current=page]{font-weight:700}
 .header-actions {justify-content:flex-end}
@@ -204,8 +204,8 @@ h3{font-size:26px;line-height:1.2}
 .note-panel,.notice,.academic-note {border-radius:var(--radius-md)}
 /* footer / no unrelated brand colors */
 .atelier-footer {background:var(--brand-primary)}
-.atelier-footer .brand {width:108px;height:108px;background:var(--surface-base);border-radius:16px;padding:7px}
-.atelier-footer .brand-logo-original{width:94px;height:94px;filter:none;opacity:1}
+.atelier-footer .brand {display: in line-flex;align-items:center;width:50px;height:auto;background:transparent;border:none; border-radius:0;padding:0}
+.atelier-footer .brand-logo-original{display: block;width:100%;height:auto;max-width:none;filter:brightness(0) invert(1);object-fit:contain;opacity:1}
 .atelier-footer__statement>p:not(.eyebrow){font:600 clamp(28px,3.5vw,44px)/1.17 var(--font);letter-spacing:-.045em}
 .atelier-footer__statement>p:not(.eyebrow) em{font-family:var(--font);font-style:normal;font-weight:600;color:#BEE0D0}
 .atelier-footer__nav nav a,.atelier-footer__bottom{font-size:16px}
@@ -303,8 +303,8 @@ h3{font-size:26px;line-height:1.2}
   .faq-list summary{font-size:20px;line-height:1.5}
   .contact-card{padding:24px}
   .grid-3{grid-template-columns:1fr}
-  .atelier-footer .brand {width:98px;height:98px}
-  .atelier-footer .brand-logo-original{width:84px;height:84px}
+  .atelier-footer .brand {width: min(50px, 100%);height:auto}
+  .atelier-footer .brand-logo-original{width:100%;height:auto}
   .atelier-footer__top {grid-template-columns:1fr;gap:36px}
   .atelier-footer__nav{grid-template-columns:1fr;gap:28px}
 }
