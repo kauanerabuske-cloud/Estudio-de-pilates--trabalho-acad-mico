@@ -56,7 +56,7 @@ p {max-width:80ch}
 .brand-wordmark strong span {font:inherit!important;letter-spacing:inherit!important;color:inherit!important}
 .brand-wordmark .brand-subline {font-family:var(--font);color:var(--teal);font-weight:800;font-size:.52rem!important;letter-spacing:.095em!important;line-height:1.1!important;margin-top:7px}
 .main-nav {display:flex;align-items:center;justify-content:center;gap:clamp(13px,1.55vw,29px);white-space:nowrap}
-.main-nav>a:not(.btn) {position:relative;color:var(--navy);font-family:var(--font);font-size:.87rem;font-weight:750;line-height:1.4;padding:16px 0;transition:color .2s}
+.main-nav>a:not(.btn) {position:relative;color:var(--navy);font-family:var(--font);font-size:1.08rem;font-weight:750;line-height:1.4;padding:16px 0;transition:color .2s}
 .main-nav>a:not(.btn)::after {content:'';position:absolute;left:0;right:100%;bottom:9px;height:2px;background:var(--coral);transition:right .23s ease}
 .main-nav>a:not(.btn):hover::after,.main-nav>a[aria-current=page]::after {right:0}
 .main-nav>a[aria-current=page]{color:var(--teal)}
@@ -87,7 +87,7 @@ p {max-width:80ch}
 .atelier-hero:before {content:"";position:absolute;right:0;top:0;width:32%;height:100%;background:#E5F0E8;pointer-events:none}
 .atelier-hero__grid {position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(36px,5vw,85px);align-items:center;min-height:min(690px,calc(100svh - 164px))}
 .atelier-hero__copy {padding:10px 0 50px;position:relative}
-.atelier-hero__rule {display:flex;justify-content:space-between;align-items:center;max-width:86%;border-top:1px solid #9FB6B5;padding-top:14px;margin-bottom:clamp(35px,5vw,66px);font:800 .75rem/1.5 var(--font);letter-spacing:.115em;color:var(--teal)}
+.atelier-hero__rule {display:flex;justify-content:space-between;align-items:center;max-width:86%;border-top:none solid #9FB6B5;padding-top:0 ;margin-bottom:clamp(35px,5vw,66px);font:800 .75rem/1.5 var(--font);letter-spacing:.115em;color:var(--teal)}
 .atelier-hero__copy .eyebrow {color:#286876;font-size:.82rem;letter-spacing:.115em}
 .atelier-hero__copy .eyebrow:before{display:none}
 .atelier-hero__copy h1 {font-size:clamp(3.75rem,5.7vw,6.25rem);line-height:1.04;max-width:12ch;letter-spacing:-.069em;margin:0 0 23px}

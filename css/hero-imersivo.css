@@ -1,0 +1,185 @@
+/* HERO IMERSIVO — Equilíbrio Ativo
+   Colocar APÓS organic-modern-wellness.css em index.html.
+   Não modifica outras páginas nem as cores da marca. */
+
+/* Remove a linha superior, sem esconder o nome do estúdio. */
+.page-index .atelier-hero__rule {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 22px;
+  max-width: none;
+}
+.page-index .atelier-hero__rule span:last-child { display: none; }
+
+/* Imagem ampla atrás de um painel editorial, como na referência. */
+.page-index .atelier-hero {
+  padding-top: 20px;
+  background: #FAF8F5;
+}
+.page-index .atelier-hero::before { display: none; }
+.page-index .atelier-hero__grid {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  width: min(1800px, calc(100% - 40px));
+  max-width: none;
+  min-height: clamp(580px, 55vw, 730px);
+  margin-inline: auto;
+  padding: clamp(24px, 4vw, 60px);
+  gap: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #E8E6DF;
+}
+.page-index .atelier-hero__copy {
+  position: relative;
+  z-index: 2;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  width: min(460px, 100%);
+  margin: 0;
+  padding: clamp(26px, 3vw, 44px);
+  border-radius: 24px;
+  background: rgba(255, 253, 249, .97);
+}
+.page-index .atelier-hero__copy h1 {
+  font-size: clamp(38px, 4vw, 56px);
+  max-width: none;
+  line-height: 1.11;
+  margin-bottom: 18px;
+}
+.page-index .atelier-hero__copy .eyebrow {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.page-index .atelier-hero__subtitle {
+  font-size: clamp(20px, 2.1vw, 23px);
+}
+.page-index .atelier-hero__copy .lead {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 42ch;
+}
+.page-index .atelier-hero__copy .hero-actions {
+  gap: 12px;
+}
+/* O figure fica atrás do painel de texto. */
+.page-index .atelier-hero__grid .organic-hero-photo {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: inherit;
+  background: none !important;
+}
+.page-index .organic-hero-photo::before {
+  content: none !important;
+  display: none !important;
+}
+.page-index .organic-hero-photo picture {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+.page-index .organic-hero-photo picture img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+.page-index .organic-hero-photo figcaption {
+  position: absolute !important;
+  right: 16px;
+  bottom: 12px;
+  left: auto;
+  z-index: 2;
+  max-width: none;
+  width: max-content;
+  white-space: nowrap;
+  padding: 5px 9px !important;
+  border-radius: 6px;
+  background: rgba(15, 43, 72, .86) !important;
+  color: white !important;
+  font-size: 12px !important;
+  text-align: right;
+}
+.page-index .atelier-hero__foot {
+  margin-top: 16px;
+}
+
+/* No celular o texto fica ANTES da imagem, evitando sua sobreposição. */
+@media (max-width: 767px) {
+  .page-index .atelier-hero { padding-top: 16px; }
+  .page-index .atelier-hero__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: auto;
+    padding: 0;
+    min-height: 0;
+    overflow: visible;
+    border-radius: 20px;
+    background: transparent;
+    white-space: normal;
+    max-width: 92%;
+  }
+  .page-index .atelier-hero__copy {
+    order: 0;
+    width: 100%;
+    padding: 28px 24px;
+    border-radius: 20px 20px 0 0;
+    background: #FFFDFA;
+  }
+  .page-index .atelier-hero__copy h1 {
+    font-size: clamp(36px, 9.6vw, 44px);
+    max-width: none;
+  }
+  .page-index .atelier-hero__copy .lead {font-size: 18px;}
+  .page-index .atelier-hero__grid .organic-hero-photo {
+    order: 1;
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    border-radius: 0 0 20px 20px;
+  }
+  .page-index .organic-hero-photo picture {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+    border-radius: 0 0 20px 20px !important;
+  }
+  .page-index .organic-hero-photo picture img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 52% center !important;
+  }
+  .page-index .organic-hero-photo figcaption {
+    right: 8px;
+    bottom: 7px;
+    max-width: 92%;
+    font-size: 11px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-index .atelier-hero * { transition: none !important; }
+}
