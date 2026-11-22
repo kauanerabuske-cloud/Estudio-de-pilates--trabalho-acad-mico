@@ -89,8 +89,8 @@ h3{font-size:26px;line-height:1.2}
 .atelier-hero__foot{padding-block:20px;margin-top:42px;font-size:13px;font-weight:500;letter-spacing:0}
 /* PURPOSE: brand is expressive without decorative starbursts */
 .atelier-principle {background:var(--brand-primary)}
-.atelier-principle__inner{grid-template-columns:64px 1fr auto;min-height:170px;gap:32px}
-.atelier-principle__leaf {width:60px;height:64px;display:block}
+.atelier-principle__inner{grid-template-columns:120px minmax(0, 1fr) auto;min-height: 190px; gap: 32px; align-items: center;}
+.atelier-principle__leaf {width: 110px;height: 120px;display:block}
 .atelier-principle__leaf img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) brightness(0) invert(1);opacity:.8}
 .atelier-principle p{font:600 clamp(24px,2.5vw,36px)/1.3 var(--font);letter-spacing:-.035em;color:#FFF;max-width:37ch}
 .atelier-principle p em {font-family:var(--font);font-style:normal;color:var(--brand-sun);font-weight:600}
@@ -260,8 +260,8 @@ h3{font-size:26px;line-height:1.2}
   .organic-hero-photo:before {inset:3% -2% 17% 5%;transform:none}
   .organic-hero-photo figcaption{font-size:13px;padding-top:12px!important;text-align:left}
   .atelier-hero__foot{margin-top:22px;padding-block:14px;flex-direction:column;gap:4px;font-size:13px}
-  .atelier-principle__inner{grid-template-columns:44px minmax(0,1fr);gap:20px;min-height:150px;padding-block:28px}
-  .atelier-principle__leaf{width:42px;height:46px}
+  .atelier-principle__inner{ grid-template-columns: 76px minmax(0, 1fr); gap: 20px; min-height: 150px; padding-block: 28px; align-items: center; }
+  .atelier-principle__leaf{ width: 72px; height: 80px; }
   .atelier-principle p{font-size:24px;line-height:1.3}
   .atelier-section-head{display:block;margin-bottom:32px}
   .atelier-section-head>p{font-size:18px;max-width:65ch;margin-top:24px}
